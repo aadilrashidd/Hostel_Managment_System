@@ -15,7 +15,7 @@ class Tenant(models.Model):
 
 class TenantDocument(models.Model):
     tenent = models.ForeignKey("tenants.tenant", on_delete=models.CASCADE)
-    remarks = models.TextField
+    remarks = models.TextField()
     file = models.FileField(upload_to=None, max_length=100)
     created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True, auto_now_add=False)
