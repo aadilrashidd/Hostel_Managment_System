@@ -20,6 +20,7 @@ class TenantDocument(models.Model):
     file = models.FileField(upload_to=None, max_length=100)
     created_at = models.DateTimeField(auto_now=False, auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True, auto_now_add=False)
+    tenant_type = models.CharField(max_length=20 , choices=[('CNIC', 'CNIC'), ('PASSPORT', 'Passport')])
 
 
 
