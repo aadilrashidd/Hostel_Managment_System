@@ -13,6 +13,6 @@ class Room(models.Model):
     number_of_seats=models.IntegerField()
     attached_washroom=models.BooleanField()
     remarks=models.TextField()
-    created_at=models.DateField( auto_now=True, auto_now_add=False)
-    modifide_at=models.DateTimeField( auto_now=False, auto_now_add=True)
+    created_at=models.DateField( auto_now=False, auto_now_add=True)
+    modifide_at=models.DateTimeField( auto_now=True, auto_now_add=False)
     
