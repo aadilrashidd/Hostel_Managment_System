@@ -8,7 +8,7 @@ class Hostel(models.Model):
     modifide_at=models.DateTimeField( auto_now=False, auto_now_add=True)
    
 class Room(models.Model):
-    hostel=models.ForeignKey("hostels.Hostel",on_delete=models.CASCADE)    
+      
     room_number=models.CharField( max_length=50)
     number_of_seats=models.IntegerField()
     attached_washroom=models.BooleanField()
