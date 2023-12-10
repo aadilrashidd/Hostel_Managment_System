@@ -11,3 +11,5 @@ class Payments(models.Model):
     valid_untill=models.DateField( auto_now=False, auto_now_add=False)
     created_at=models.DateField( auto_now=False, auto_now_add=False)
     updated_at=models.DateTimeField( auto_now=False, auto_now_add=False)  
+    def __str__(self):
+        return f"name: {self.tenant} payment date: {self.payment_date}"
